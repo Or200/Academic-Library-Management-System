@@ -17,24 +17,10 @@ if __name__ == "__main__":
     my_library.register_user(user1)
     my_library.register_user(user2)
     my_library.perform_borrow(123456789, 1000)
+    my_library.perform_borrow(123456789, 1001)
     my_library.perform_borrow(987654321, 1002)
-    # for book in my_library.users[123456789].borrowed_books:
-    #     print(book.get_details())
+    print(my_library.users[123456789].borrowed_books)
     my_library.perform_return(123456789, 1000)
 
 
-
-
-
-
-
-
-
-
-
-
-
     Logger.log_action("EXIT", "-------------------------")
-
-
-

@@ -21,3 +21,8 @@ class Book:
     def get_details(self) -> str:
             return f"The book {self.title} write by {self.author}. book id is {self.book_id}"
 
+    def __str__(self):
+        return f"The book {self.title} write by {self.author}. book id is {self.book_id}"
+    
+    def __repr__(self):
+        return self.__str__()
